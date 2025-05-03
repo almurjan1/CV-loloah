@@ -1,49 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: #ffffff;
-  margin: 0;
-  padding: 0;
+  margin: 40px;
+  color: #818bb1;
+  transition: background-color 0.3s ease;
 }
 
-.container {
-  display: flex;
-  min-height: 100vh;
-}
-
-aside {
-  width: 30%;
-  background-color: #51608e;
-  color: white;
-  padding: 20px;
+header {
+  background: linear-gradient(to right, #ffffff, #e5e8f1);
+  padding: 30px;
+  border-radius: 16px;
   text-align: center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
-aside img {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
+header h1 {
+  color: #51608e;
+  font-size: 2.8em;
   margin-bottom: 10px;
 }
 
-aside a {
-  color: #ffd700;
-  text-decoration: none;
+section {
+  background-color: #ffffff;
+  padding: 25px;
+  margin-top: 30px;
+  border-radius: 16px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
 }
 
-main {
-  width: 70%;
-  padding: 40px;
-  background-color: #f9f9f9;
+section:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
   color: #51608e;
-  border-bottom: 1px solid #ccc;
+  font-style: italic;
+  border-bottom: 1px dashed #e0e3ed;
   padding-bottom: 5px;
+  margin-bottom: 20px;
+  position: relative;
 }
 
-p, li {
+h2::before {
+  content: "★";
+  position: absolute;
+  left: -25px;
+  color: #818bb1;
+  font-size: 1.2em;
+}
+
+ul, ol {
+  padding-left: 25px;
   color: #818bb1;
 }
 
@@ -51,13 +61,39 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 10px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 table, th, td {
-  border: 1px solid #ccc;
+  border: 1px solid #d1d4e2;
+}
+
+th {
+  background-color: #f0f2f9;
+  color: #51608e;
 }
 
 th, td {
-  padding: 10px;
+  padding: 12px;
   text-align: center;
+}
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+  color: #b0b4cc;
+  font-size: 0.9em;
+  padding-bottom: 30px;
+}
+
+a {
+  color: #51608e;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #384d72;
 }
